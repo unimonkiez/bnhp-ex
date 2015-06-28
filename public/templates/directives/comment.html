@@ -1,0 +1,13 @@
+<div class="comments-comment">
+    <img ng-src="{{comment.author.image}}" class="comments-comment-image" />
+    <div class="comments-comment-details">
+        <div class="comments-comment-details-header">
+            <a href="/user/{{comment.author.id}}" class="comments-comment-details-header-user">{{comment.author.fName + comment.author.lName}}</a> {{comment.createdAt | time}}
+            <a href class="comments-comment-details-header-reply" ng-click="reply()">Reply</a>
+        </div>
+        <div class="comments-comment-details-body">
+            {{comment.txt}}
+        </div>
+    </div>
+    <div class="comments-comment-clear"></div>
+</div>
