@@ -1,0 +1,45 @@
+.btn-slide {
+    @gray-color: #b5b9c5;
+    @green-color: #8ac400;
+    height: 28px;
+    border: 2px solid #b5b9c5;
+    border-radius: 12px;
+    background-color: #ddd;
+    color: #414b67;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+    position: relative;
+    &:after {
+        margin-right: 5px;
+        border: 2px solid #b5b9c5;
+        border-radius: 10px;
+        background-color: @gray-color;
+        content: " ";
+        width: 36px;
+        height: 18px;
+        display: inline-block;
+        float: left;
+    }
+    &:before {
+        left: 12px;
+        top: 4px;
+        position: absolute;
+        content: " ";
+        height: 5px;
+        width: 5px;
+        background-color: transparent;
+        border: 5px solid white;
+        border-radius: 10px;
+        box-shadow: 0 0 0 1px #b5b9c5;
+        transition: left 0.5s ease;
+    }
+    &.in {
+        &:after {
+            background-color: @green-color;
+        }
+        &:before {
+            left: 29px;
+        }
+    }
+}

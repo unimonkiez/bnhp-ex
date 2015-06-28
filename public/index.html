@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>BNHP Exercise</title>
-    <link rel="stylesheet" href="lib/normalize.css/normalize.css"/>
-    <link rel="stylesheet" href="lib/angular/angular-csp.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="lib/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="lib/angular/angular-csp.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body ng-app="myApp" class="ng-cloak">
     <main>
         <h2>Lorem ipsum dolor sit amet. <small>{{'2015-05-30T08:17:38.136Z' | time}}</small></h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis distinctio doloribus expedita
-            impedit iure laboriosam libero mollitia nemo, porro qui quos recusandae sed? Ab adipisci aliquam consequatur
-            consequuntur deserunt doloremque esse ex expedita facere fugiat, impedit ipsum libero neque non nulla odit
-            officia optio praesentium repudiandae soluta temporibus unde vero? Animi beatae consequuntur distinctio
-            dolorum, earum harum molestias nesciunt non nostrum qui quia quibusdam quisquam quo rerum tempora velit
-            veritatis voluptates. Beatae corporis cumque quo sapiente. Dolores dolorum earum maxime minima natus odit
-            perferendis quae sed. Architecto cum deserunt nemo nulla reiciendis! Adipisci atque dolorem dolorum illum
-            provident ut.</p>
-
-        <p>Aliquam doloremque exercitationem facilis libero, magni mollitia non obcaecati porro, quas suscipit, tenetur
-            ullam? A aliquam aperiam assumenda blanditiis culpa cumque dicta distinctio dolores earum enim
-            exercitationem ipsum itaque modi nisi non perspiciatis, placeat possimus repellat sint veritatis, voluptas
-            voluptates voluptatum! Doloribus ipsam sed sunt tenetur velit! Beatae culpa eum facere ipsam ipsum odio
-            repellendus soluta veniam vitae voluptatibus! Consequuntur, cum deleniti deserunt dicta dignissimos dolore
-            dolores ea esse ex, fuga id illum in magni modi nam neque pariatur placeat porro, soluta tempora! Assumenda
-            dolor, ducimus in, libero magni maxime nobis odit officiis optio reiciendis, repudiandae sequi sint suscipit
-            unde?</p>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis distinctio doloribus expedita impedit iure laboriosam libero mollitia nemo, porro qui quos recusandae sed? Ab adipisci aliquam consequatur consequuntur deserunt doloremque esse ex expedita facere fugiat, impedit ipsum libero neque non nulla odit officia optio praesentium repudiandae soluta temporibus unde vero? Animi beatae consequuntur distinctio dolorum, earum harum molestias nesciunt non nostrum qui quia quibusdam quisquam quo rerum tempora velit veritatis voluptates. Beatae corporis cumque quo sapiente. Dolores dolorum earum maxime minima natus odit perferendis quae sed. Architecto cum deserunt nemo nulla reiciendis! Adipisci atque dolorem dolorum illum provident ut.</p>
+        <p>Aliquam doloremque exercitationem facilis libero, magni mollitia non obcaecati porro, quas suscipit, tenetur ullam? A aliquam aperiam assumenda blanditiis culpa cumque dicta distinctio dolores earum enim exercitationem ipsum itaque modi nisi non perspiciatis, placeat possimus repellat sint veritatis, voluptas voluptates voluptatum! Doloribus ipsam sed sunt tenetur velit! Beatae culpa eum facere ipsam ipsum odio repellendus soluta veniam vitae voluptatibus! Consequuntur, cum deleniti deserunt dicta dignissimos dolore dolores ea esse ex, fuga id illum in magni modi nam neque pariatur placeat porro, soluta tempora! Assumenda dolor, ducimus in, libero magni maxime nobis odit officiis optio reiciendis, repudiandae sequi sint suscipit unde?
+        </p>
         <section>
             <h3>Lorem ipsum dolor sit.</h3>
             <ul>
@@ -39,7 +25,9 @@
                 <li>Eius maxime nihil quibusdam!</li>
             </ul>
         </section>
-
+        <button ng-init="publish = false;" class="btn-slide" ng-class="{in : publish}" ng-click="publish = !publish;">
+            publish
+        </button>
         <section>
             <h3>Comments</h3>
             <comments></comments>
@@ -51,14 +39,13 @@
             <h3>Comments - limited to 3</h3>
             <comments comments-max-level="3"></comments>
         </section>
-        
     </main>
     <script src="lib/moment/min/moment.min.js"></script>
     <script src="lib/angular/angular.js"></script>
-
     <script src="js/services.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
